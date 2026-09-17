@@ -30,6 +30,53 @@ Projected display
 
 This repository contains the integrated project rather than only my individual contribution, since the runtime depends on the interaction between all of these components.
 
+## Installation & Running
+
+Requirements:
+
+Python 3.10+ (needs verification for the exact minor version)
+A desktop environment with a working webcam and a fullscreen display/projector
+A local Python environment with access to a GUI display
+Install:
+
+Create and activate a virtual environment:
+
+python -m venv .venv
+# Windows
+.venv\Scripts\activate
+# macOS/Linux
+source .venv/bin/activate
+
+Install the required packages:
+
+python -m pip install --upgrade pip
+pip install pygame opencv-python numpy mediapipe
+
+This dependency list is inferred from the imports and should be verified against the exact target environment.
+
+Ensure the MediaPipe hand model is available:
+
+The app will attempt to download hand_landmarker.task automatically if it is missing.
+If the download fails, place hand_landmarker.task in the project root, next to main.py.
+
+Run the calibration step once if your camera/projector position changes:
+
+python calibration.py
+
+This creates calibration.npy for the physical setup.
+
+Run the app:
+
+python main.py
+
+Notes:
+
+The project expects a webcam on device index 0.
+It runs in fullscreen at 1280x720.
+The app is intended for a projector or monitor-based interactive surface and is not a console-only app.
+No environment variables or secret configuration are required by the current repo, but this should be re-checked if the project is later expanded.
+
+
 ## Limitations & Future Work
 
 The prototype was developed within the constraints of a university project and presentation timeline. Several areas remain open for further development:
