@@ -2,6 +2,10 @@
 
 A webcam-controlled, projected Battleships game developed as a collaborative university project. The system uses real-time hand tracking to allow players to interact with a projected game board without conventional physical controls.
 
+![Full demo](assets/library-demo.jpg)
+![Full mount](assets/full-mount.jpg)
+![Projected Game](assets/projected-game.jpg)
+
 ## My contribution
 
 I was responsible for the **core runtime architecture and integration of the project**. I brought the hand-tracking and game components together into a functioning real-time application, including the communication between the vision pipeline and game loop, gesture/event handling, input state management, game-mode architecture, and Battleships interaction logic.
