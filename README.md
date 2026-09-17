@@ -3,8 +3,8 @@
 A webcam-controlled, projected Battleships game developed as a collaborative university project. The system uses real-time hand tracking to allow players to interact with a projected game board without conventional physical controls.
 
 ![Full demo](assets/library-demo.jpg)
-![Full mount](assets/full-mount.jpg)
-![Projected Game](assets/projected-game.jpg)
+![Full mount](assets/full-mount.jpeg)
+![Projected Game](assets/projected-game.jpeg)
 
 ## My contribution
 
