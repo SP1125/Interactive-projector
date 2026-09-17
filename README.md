@@ -77,10 +77,10 @@ python main.py
 
 ### Notes:
 
-The project expects a webcam on device index 0.
-It runs in fullscreen at 1280x720.
-The app is intended for a projector or monitor-based interactive surface and is not a console-only app.
-No environment variables or secret configuration are required by the current repo, but this should be re-checked if the project is later expanded.
+* The project expects a webcam on device index 0.
+* It runs in fullscreen at 1280x720.
+* The app is intended for a projector or monitor-based interactive surface and is not a console-only app.
+* No environment variables or secret configuration are required by the current repo, but this should be re-checked if the project is later expanded.
 
 
 ## Limitations & Future Work
