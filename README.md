@@ -30,6 +30,18 @@ Projected display
 
 This repository contains the integrated project rather than only my individual contribution, since the runtime depends on the interaction between all of these components.
 
+## Features
+
+* **Real-time hand tracking** — Uses a webcam and MediaPipe hand landmarks to track the player's hand and fingertip position.
+* **Gesture-based interaction** — Converts fingertip movement into `TAP`, `DRAG`, and `RELEASE` events for controlling the game without a physical mouse or touchscreen.
+* **Asynchronous vision pipeline** — Runs camera/vision processing separately from the main Pygame loop, communicating through a bounded event queue.
+* **Interactive Battleships gameplay** — Supports board interaction, ship placement, turn handling, hits, misses and sunk ships through hand-controlled input.
+* **Fullscreen projected display** — Designed for interaction with a projected game board rather than a conventional desktop interface.
+* **Modular game architecture** — Separates input processing, game state, game modes and rendering, allowing different interactive modes to be developed within the same runtime.
+* **Keyboard and mouse fallback** — Provides conventional input controls for testing and development when vision-based input is unavailable.
+* **Camera–projector calibration prototype** — Includes a calibration tool for mapping camera coordinates to projected-screen coordinates using a homography transform.
+* **Animated visual interface** — Includes an ocean-themed Battleships interface with animated visual elements and game-state feedback.
+
 ## Installation & Running
 
 ### Requirements:
