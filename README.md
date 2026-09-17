@@ -29,3 +29,11 @@ Projected display
 ```
 
 This repository contains the integrated project rather than only my individual contribution, since the runtime depends on the interaction between all of these components.
+
+## Limitations & Future Work
+
+The prototype was developed within the constraints of a university project and presentation timeline. Several areas remain open for further development:
+
+* **Camera–projector calibration:** A homography-based calibration system was prototyped to map camera coordinates to projected-screen coordinates, but was not fully integrated into the final runtime. Further work would be required to make the interaction robust to changes in camera/projector position and perspective.
+* **Input latency:** The current vision-to-game pipeline has noticeable latency, particularly during continuous hand movement. Future work would investigate camera capture and processing rates, MediaPipe inference cost, event-queue behaviour, and unnecessary processing between the vision and rendering pipelines.
+* **Robustness:** Further testing across different lighting conditions, camera positions and user hand positions would be needed to make the interaction system reliable outside the controlled presentation environment.
