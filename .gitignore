@@ -1,3 +1,19 @@
-**/__pycache__/
+# Python
+__pycache__/
+*.pyc
+bs__pycache__/
+modes__pycache__/
+
+# Virtual environment
+venv/
+.venv/
+
+# VS Code
+.vscode/
+
+# Environment/secrets
+.env
+
+# Large/local files
 hand_landmarker.task
 outputs/
