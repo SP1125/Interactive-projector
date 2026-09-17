@@ -32,50 +32,50 @@ This repository contains the integrated project rather than only my individual c
 
 ## Installation & Running
 
-Requirements:
+### Requirements:
 
 Python 3.10+ (needs verification for the exact minor version)
 A desktop environment with a working webcam and a fullscreen display/projector
 A local Python environment with access to a GUI display
 Install:
 
-Create and activate a virtual environment:
+### Create and activate a virtual environment:
 
-'''text
+```text
 python -m venv .venv
 # Windows
 .venv\Scripts\activate
 # macOS/Linux
 source .venv/bin/activate
-'''
+```
 
-Install the required packages:
+### Install the required packages:
 
-'''text
+```text
 python -m pip install --upgrade pip
 pip install pygame opencv-python numpy mediapipe
-'''
+```
 
 This dependency list is inferred from the imports and should be verified against the exact target environment.
 
-Ensure the MediaPipe hand model is available:
+### Ensure the MediaPipe hand model is available:
 
 The app will attempt to download hand_landmarker.task automatically if it is missing.
 If the download fails, place hand_landmarker.task in the project root, next to main.py.
 
-Run the calibration step once if your camera/projector position changes:
-'''text
+### Run the calibration step once if your camera/projector position changes:
+```text
 python calibration.py
-'''
+```
 
 This creates calibration.npy for the physical setup.
 
 Run the app:
-'''text
+```text
 python main.py
-'''
+```
 
-Notes:
+### Notes:
 
 The project expects a webcam on device index 0.
 It runs in fullscreen at 1280x720.
